@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+body{
+	font-size: 32px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
+	color: hsl(240, 38%, 20%);
+}
+/*
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }*/
+/* MEDIA QUERIES */
+@media only screen and (min-width: 700px){
+.container{
+	width: 900px;
+	margin: 100px auto;
+	height: auto;
+	padding: 50px;
+}
+.pattern_curve{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.content{
+	position: absolute;
+	left: 180px;
+	top: 200px;
+	z-index: 3;
+	width: 47%;
+}
+.content_background{
+	position: absolute;
+	left: 280px;
+	top: 130px;
+	z-index: 2;
+}
+.img{
+	position: absolute;
+	right: 60px;
+	top: 80px;
+	z-index: 2;
+	border-radius: 2%;
+}
+.img_background{
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+#slides{
+	list-style-type: none;
+}
+.slide{
+	height: 0px;
+	opacity: 0;
+	z-index: 1;
+	transition: opacity 1s;
+}
+.current_slide{
+	opacity: 1;
+	z-index: 2;
+}
+.carousel_icons{
+	position: absolute;
+	z-index: 3;
+	left: 750px;
+	top: 595px;
+	background-color: #fff;
+	border-radius: 50px;
+	padding: 5px;
+	width: 100px;
+	text-align: center;
+}
+}
+
+/* MOBILE AND TABLETS */
+@media only screen and (max-width: 600px){
+	.container{
+	width: 100%;
+	margin: 0;
+	height: auto;
+	padding: 10px;
+}
+.pattern_curve{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+.content_background{
+	position: absolute;
+	text-align: center;
+	z-index: 3;
+	left: 50%;
+	top: 636px;
+}
+.content{
+	position: absolute;
+	display: block;
+	text-align: center;
+	z-index: 1;
+}
+.img{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 1;
+	border-radius: 2%;
+	background-image: url(../images/pattern-bg.svg);
+	background-repeat: no-repeat;
+	padding: 50px;
+	width:100%;
+}
+#slides{
+	list-style-type: none;
+}
+.slide{
+	height: 0px;
+	opacity: 0;
+	z-index: 1;
+	transition: opacity 1s;
+}
+.current_slide{
+	opacity: 1;
+	z-index: 2;
+}
+.carousel_icons{
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	top: 47%;
+	background-color: #fff;
+	border-radius: 50px;
+	padding: 5px;
+	width: 120px;
+	text-align: center;
+}
+.job_title{
+	display: block;
+}
+.img_background{
+	opacity: 0;
+}
+}
