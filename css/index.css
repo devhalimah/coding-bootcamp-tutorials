@@ -6,9 +6,8 @@ body{
 	font-weight: 300;
 	color: hsl(240, 38%, 20%);
 }
-/*
 .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }*/
+    .attribution a { color: hsl(228, 45%, 44%); }
 /* MEDIA QUERIES */
 @media only screen and (min-width: 700px){
 .container{
